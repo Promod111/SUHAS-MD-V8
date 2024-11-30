@@ -51,7 +51,7 @@ const ownerNumber = ['🧚‍♂️💕𝗔𝗱𝗱 𝗬𝗼𝘂𝗿 𝗕𝗼�
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
-if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
+if(!config.SESSION_ID) return console.log('aZM3QJ5S#8HFgoHAraldqjhxgKo2g6uNM05K62ojYYTV6E1HJ5eM')
 const sessdata = config.SESSION_ID
 const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
@@ -125,8 +125,8 @@ const q = args.join(' ')
 const isGroup = from.endsWith('@g.us')
 const sender = mek.key.fromMe ? (conn.user.id.split(':')[0]+'@s.whatsapp.net' || conn.user.id) : (mek.key.participant || mek.key.remoteJid)
 const senderNumber = sender.split('@')[0]
-const botNumber = conn.user.id.split(':')[0]
-const pushname = mek.pushName || 'Sin Nombre'
+const botNumber = conn.user.id.split('94760334624')[0]
+const pushname = mek.pushName || 'sithu bhh'
 const isMe = botNumber.includes(senderNumber)
 const isOwner = ownerNumber.includes(senderNumber) || isMe
 const botNumber2 = await jidNormalizedUser(conn.user.id);
